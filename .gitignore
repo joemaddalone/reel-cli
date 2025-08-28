@@ -1,0 +1,11 @@
+node_modules
+.cursor
+coverage/
+*.log
+.vscode
+dist/
+src/img
+.DS_Store
+memory-bank
+films/
+exported-films/

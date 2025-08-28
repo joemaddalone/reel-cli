@@ -1,0 +1,60 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.cursor/
+memory-bank/
+# Old project name references
+popcorn-cli/
+*.log
+*.tsbuildinfo
+
+# Git
+.git/
+.gitignore
+
+# Dependencies
+node_modules/
+
+# Build artifacts (will be included via package.json files)
+# dist/ is explicitly included in package.json
+
+# Development scripts
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Documentation (README.md and LICENSE are explicitly included)
+docs/
+*.md
+!README.md
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp

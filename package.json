@@ -1,0 +1,62 @@
+{
+  "name": "reel-cli",
+  "version": "1.0.0",
+  "description": "A powerful CLI tool for searching, retrieving, and managing comprehensive film data from The Movie Database (TMDB)",
+  "license": "MIT",
+  "author": "Joe Maddalone <joemaddalone@gmail.com>",
+  "type": "commonjs",
+  "keywords": [
+    "cli",
+    "movies",
+    "films",
+    "tmdb",
+    "database",
+    "search",
+    "download",
+    "metadata",
+    "images",
+    "export"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joemaddalone/reel-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joemaddalone/reel-cli/issues"
+  },
+  "homepage": "https://github.com/joemaddalone/reel-cli#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "reel": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^5.6.0",
+    "commander": "^14.0.0",
+    "figlet": "^1.8.2",
+    "inquirer": "^12.9.4",
+    "moviedb-promise": "^4.0.7",
+    "ora": "^8.2.0",
+    "zod": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
