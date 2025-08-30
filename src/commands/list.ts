@@ -244,10 +244,10 @@ export class ListCommand extends BaseCommand {
   }
 
   private extractFilmName(filmDir: string): string {
-    // Extract film name from directory (remove ID prefix)
+    // Extract film name from directory (remove ID suffix)
     const parts = filmDir.split('-');
     if (parts.length > 1) {
-      return parts.slice(1).join('-');
+      return parts.slice(0, -1).join('-');
     }
     return filmDir;
   }

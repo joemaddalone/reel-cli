@@ -11,7 +11,6 @@ A powerful command-line interface tool for searching, retrieving, and managing c
 - **📁 File Management**: List, view, delete, and manage saved films
 - **📤 Data Export**: Export film data in multiple formats (JSON, CSV, TXT)
 - **⚙️ Persistent Configuration**: Store API credentials and preferences securely
-- **🎨 Beautiful CLI**: Modern terminal interface with colors, spinners, and progress indicators
 
 ## 🚀 Installation
 
@@ -173,7 +172,7 @@ The CLI creates an organized directory structure for each film:
 
 ```
 [output-directory]/
-├── [film-id]-[film-title]/
+├── [film-title]-[film-id]/
 │   ├── data.json          # Complete film metadata
 │   ├── metadata.txt       # Human-readable summary
 │   ├── poster.jpg         # Film poster (if available)

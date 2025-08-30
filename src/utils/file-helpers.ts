@@ -55,7 +55,7 @@ export class FileHelpers {
    */
   public static createFilmDirectoryName(filmId: number, filmTitle: string): string {
     const sanitizedTitle = this.sanitizeFilename(filmTitle);
-    return `${filmId}-${sanitizedTitle}`;
+    return `${sanitizedTitle}-${filmId}`;
   }
 
   /**
