@@ -6,6 +6,7 @@ import { HelpCommand } from './help';
 import { TestCommand } from './test';
 import { ListCommand } from './list';
 import { ExportCommand } from './export';
+import packageJson from '../../package.json';
 
 export class CommandRegistry {
   private commands: BaseCommand[] = [];
@@ -21,7 +22,7 @@ export class CommandRegistry {
     this.program
       .name('reel')
       .description('Search for films and retrieve comprehensive data from TMDB')
-      .version('1.0.0')
+      .version(packageJson.version)
       .option('-d, --debug', 'Enable debug mode')
       .option('-v, --verbose', 'Enable verbose output');
   }

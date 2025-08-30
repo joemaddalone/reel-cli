@@ -1,6 +1,6 @@
 {
   "name": "reel-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A powerful CLI tool for searching, retrieving, and managing comprehensive film data from The Movie Database (TMDB)",
   "license": "MIT",
   "author": "Joe Maddalone <joemaddalone@gmail.com>",
