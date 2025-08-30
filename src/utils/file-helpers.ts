@@ -42,6 +42,8 @@ export class FileHelpers {
   public static sanitizeFilename(filename: string): string {
     return filename
       .replace(/[<>:"/\\|?*]/g, '-') // Replace invalid characters
+      .replace(/[''""`´]/g, '') // Remove apostrophes and quotes
+      .replace(/[.,;:!@#$%^&*()_+={}\[\]|\\/]/g, '') // Remove other punctuation
       .replace(/\s+/g, '-') // Replace spaces with hyphens
       .replace(/-+/g, '-') // Replace multiple hyphens with single
       .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
