@@ -2,17 +2,16 @@
 
 A powerful command-line interface tool for searching, retrieving, and managing comprehensive film data from The Movie Database (TMDB). Save film metadata, download images, and organize your movie collection locally.
 
-## ✨ Features
+## Features
 
-- **🔍 Film Search**: Search TMDB database by title with advanced filtering
-- **📊 Rich Data**: Retrieve comprehensive film information including cast, crew, ratings, and more
-- **🖼️ Image Downloads**: Automatically download posters and backdrops with quality options
-- **💾 Local Storage**: Save film data locally in organized directory structures
-- **📁 File Management**: List, view, delete, and manage saved films
-- **📤 Data Export**: Export film data in multiple formats (JSON, CSV, TXT)
-- **⚙️ Persistent Configuration**: Store API credentials and preferences securely
+- **Film Search**: Search TMDB database by title with advanced filtering
+- **Image Downloads**: Automatically download posters and backdrops with quality options
+- **Local Storage**: Save film data locally in organized directory structures
+- **File Management**: List, view, delete, and manage saved films
+- **Data Export**: Export film data in multiple formats (JSON, CSV, TXT)
+- **Persistent Configuration**: Store API credentials and preferences securely
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -36,7 +35,7 @@ npm run build
 npm link
 ```
 
-## 🎯 Quick Start
+## Quick Start
 
 1. **Configure your API key:**
    ```bash
@@ -166,7 +165,7 @@ reel configure --api-key YOUR_KEY --output-dir ./movies --image-quality high
 - `--image-quality <quality>`: Image quality (low|medium|high)
 - `--download-images`: Enable/disable image downloads
 
-## 📁 File Structure
+## File Structure
 
 The CLI creates an organized directory structure for each film:
 
@@ -179,7 +178,7 @@ The CLI creates an organized directory structure for each film:
 │   └── backdrop.jpg       # Film backdrop (if available)
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Configuration is stored in `~/.reel-cli/` and includes:
 
@@ -250,7 +249,7 @@ src/
 - `npm run clean` - Clean build artifacts
 - `npm run test` - Run tests
 
-## 🧪 Testing
+## Testing
 
 Test the CLI functionality:
 
@@ -301,7 +300,7 @@ reel list --stats
 reel list --delete
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -320,30 +319,21 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Write meaningful commit messages
 - Add tests for new features
 
-## 📄 License
+## Kicense
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [The Movie Database (TMDB)](https://www.themoviedb.org/) for providing the API
 - [moviedb-promise](https://github.com/grantholle/moviedb-promise) for the Node.js wrapper
 - [Commander.js](https://github.com/tj/commander.js) for CLI framework
 - [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) for interactive prompts
 
-## 🐛 Issues & Support
+## Issues & Support
 
 - **Bug Reports**: [GitHub Issues](https://github.com/joemaddalone/reel-cli/issues)
 - **Feature Requests**: [GitHub Discussions](https://github.com/joemaddalone/reel-cli/discussions)
 - **Documentation**: [GitHub Wiki](https://github.com/joemaddalone/reel-cli/wiki)
-
-## 📊 Project Status
-
-- **Version**: 1.0.0
-- **Status**: Active Development
-- **Node.js**: 16+
-- **License**: MIT
-
----
 
 **Made with ❤️ for movie enthusiasts**
